@@ -140,14 +140,6 @@ table {
 .navbar h1 {
   font-size: 4rem;
 }
-.navbar a {
-  text-decoration: none;
-  font-size: 2rem;
-  color: white;
-}
-.navbar a:hover {
-  cursor: pointer;
-}
 .navbar .buttons {
   display: flex;
   flex-flow: row nowrap;
@@ -157,21 +149,43 @@ table {
 .navbar .buttons:hover {
   cursor: pointer;
 }
+.dropdown {
+  height: 70px;
+  background-color: black;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+}
+.dropdown a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+  margin: 5px;
+}
+.dropdown a:hover {
+  cursor: pointer;
+}
 .no-show {
   display: none;
 }
 .cta {
   position: relative;
   margin: 0 auto;
+  display: block;
+  border: 1px solid blue;
 }
 .cta img {
   width: 100%;
+  height: 100%;
   max-width: 800px;
   font-size: 2.75rem;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .cta .cta-text {
-  position: absolute;
-  height: 100%;
+  position: relative;
   width: 60%;
   top: 0;
   left: 0;
@@ -179,6 +193,8 @@ table {
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
+  height: 100%;
+  border: 1px solid red;
 }
 .cta .cta-text h2 {
   font-size: 10vw;
@@ -231,7 +247,8 @@ table {
 }
 footer {
   margin-top: 60px;
-  height: 80px;
+  height: 60px;
+  width: 100%;
   background-color: black;
   color: white;
   text-align: center;
