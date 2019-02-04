@@ -176,6 +176,35 @@ table {
   background-color: white;
   border: 1px solid black;
 }
+.details {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.details section {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 20px;
+}
+.details img {
+  width: 100%;
+  max-width: 500px;
+}
+.details div {
+  border: 1px solid black;
+}
+.details h3 {
+  font-size: 3rem;
+  font-weight: strong;
+  margin: 30px auto;
+  border: 1px solid blue;
+  text-align: center;
+}
+.details p {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
 * {
   box-sizing: border-box;
 }
