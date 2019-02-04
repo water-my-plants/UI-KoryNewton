@@ -156,7 +156,7 @@ table {
 .cta .cta-text {
   position: absolute;
   height: 100%;
-  width: 59%;
+  width: 60%;
   top: 0;
   left: 0;
   display: flex;
@@ -165,11 +165,11 @@ table {
   align-items: center;
 }
 .cta .cta-text h2 {
-  font-size: 2.75rem;
+  font-size: 10vw;
   margin: 10px 0;
 }
 .cta .cta-text h3 {
-  font-size: 2rem;
+  font-size: 5vw;
   margin: 10px 0;
 }
 .cta .cta-text button {
