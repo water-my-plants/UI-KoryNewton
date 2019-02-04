@@ -1,7 +1,7 @@
 //Javascript
 
 //hamburger button
-let hamburgerBtn = document.querySelector('.navbar .buttons')
+let hamburgerBtn = document.querySelector('.navbar .buttons img')
 
 let loginSignUp =  document.querySelectorAll('.no-show')
 
