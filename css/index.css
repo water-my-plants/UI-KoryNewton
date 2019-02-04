@@ -172,8 +172,8 @@ table {
 .cta {
   position: relative;
   margin: 0 auto;
+  padding: 20px;
   display: block;
-  border: 1px solid blue;
 }
 .cta img {
   width: 100%;
@@ -194,7 +194,6 @@ table {
   justify-content: space-around;
   align-items: center;
   height: 100%;
-  border: 1px solid red;
 }
 .cta .cta-text h2 {
   font-size: 10vw;
