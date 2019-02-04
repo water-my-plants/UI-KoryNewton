@@ -8,7 +8,7 @@
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
-        padding: 20px;
+        padding: 40px 20px 40px 20px;
 
     }
 
@@ -17,20 +17,30 @@
         max-width: 500px;
     }
 
-    div {
-        border: 1px solid black;
-    }
+    // div {
+    //     // border: 1px solid black;
+    // }
 
     h3 {
-        font-size: 3rem;
+        font-size: 4rem;
         font-weight: strong;
         margin: 30px auto;
-        border: 1px solid blue;
+        // border: 1px solid blue;
         text-align: center;
     }
     p {
         text-align: center;
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin-bottom: 20px;
     }
+}
+
+.download-links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.download-links:hover {
+    cursor: pointer;
 }
