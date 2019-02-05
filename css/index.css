@@ -192,6 +192,12 @@ table {
   padding: 20px;
   display: block;
 }
+@media (min-width: 800px) {
+  .cta {
+    max-width: 800px;
+    height: 550px;
+  }
+}
 .cta img {
   width: 100%;
   height: 100%;
@@ -200,6 +206,14 @@ table {
   position: absolute;
   top: 0;
   left: 0;
+}
+@media (min-width: 800px) {
+  .cta img {
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
 }
 .cta .cta-text {
   position: relative;
@@ -212,13 +226,31 @@ table {
   align-items: center;
   height: 100%;
 }
+@media (min-width: 800px) {
+  .cta .cta-text {
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+  }
+}
 .cta .cta-text h2 {
   font-size: 10vw;
   margin: 10px 0;
 }
+@media (min-width: 800px) {
+  .cta .cta-text h2 {
+    font-size: 8rem;
+  }
+}
 .cta .cta-text h3 {
   font-size: 5vw;
   margin: 10px 0;
+}
+@media (min-width: 800px) {
+  .cta .cta-text h3 {
+    font-size: 4rem;
+  }
 }
 .cta .cta-text button {
   background-color: white;
@@ -236,7 +268,18 @@ table {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  padding: 40px 20px 40px 20px;
+  padding: 40px 20px;
+}
+@media (min-width: 800px) {
+  .details section {
+    flex-flow: row nowrap;
+    padding: 20px;
+  }
+}
+@media (min-width: 800px) {
+  .details .opposite {
+    flex-flow: row-reverse nowrap;
+  }
 }
 .details img {
   width: 100%;
@@ -278,10 +321,4 @@ body {
   margin: 0;
   padding: 0;
   font-size: 62.5%;
-}
-@media (min-width: 1000px) {
-  html,
-  body {
-    background-color: blue;
-  }
 }

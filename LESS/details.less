@@ -3,13 +3,26 @@
 .details {
     display:flex;
     flex-flow: column nowrap;
+
+   
     
     section {
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
-        padding: 40px 20px 40px 20px;
+        padding: 40px 20px;
 
+        @media (min-width:800px) {
+            flex-flow: row nowrap;
+            padding: 20px;
+        }
+
+    }
+
+    .opposite {
+        @media (min-width:800px) {
+            flex-flow: row-reverse nowrap;
+        }
     }
 
     img {
