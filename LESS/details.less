@@ -8,6 +8,12 @@
     @media (min-width:800px) {
         margin-top: 60px;
     }
+
+    @media (min-width:1000px) {
+        flex-flow: row nowrap;
+    }
+
+
     
     section {
         display: flex;
@@ -20,6 +26,10 @@
             padding: 20px;
         }
 
+        @media (min-width:1000px) {
+            flex-flow: column nowrap;
+        }
+
     }
 
     .opposite {
@@ -29,15 +39,23 @@
         @media (min-width:800px) {
             flex-flow: row-reverse nowrap;
         }
+        @media (min-width:1000px) {
+            flex-flow: column nowrap;
+        }
     }
 
     img {
-        width: 100%;
+        width: 80%;
         max-width: 500px;
         border-radius: 50%;
         
         @media (min-width:800px) {
             margin: 0 30px;
+            width: 55%;
+        }
+
+        @media (min-width:1000px) {
+            width: 70%;
         }
     }
 
