@@ -1,0 +1,21 @@
+@import './reset.less';
+@import './variables.less';
+@import './header.less';
+@import './cta.less';
+@import './details.less';
+@import './footer.less';
+
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    margin: 0; 
+    padding: 0;
+    font-size: 62.5%;
+
+    //Mobile first design: at > 1000px bkgrd changes
+    @media (min-width:1000px) {
+        background-color: blue;
+    }
+  }
