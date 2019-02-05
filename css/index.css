@@ -138,7 +138,9 @@ table {
   width: 100%;
 }
 .navbar h1 {
-  font-size: 4rem;
+  font-size: 5rem;
+  font-family: 'Nanum Pen Script', cursive;
+  color: #5AAB61;
 }
 .navbar .buttons {
   display: flex;
@@ -284,6 +286,7 @@ table {
 .details img {
   width: 100%;
   max-width: 500px;
+  border-radius: 50%;
 }
 .details h3 {
   font-size: 4rem;
