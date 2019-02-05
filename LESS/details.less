@@ -5,6 +5,9 @@
     flex-flow: column nowrap;
     // background-color: 
 
+    @media (min-width:800px) {
+        margin-top: 60px;
+    }
 
    
     
@@ -55,6 +58,17 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+
+    @media (min-width:800px) {
+        margin: 40px 0;
+        justify-content: center;
+    }
+
+    a {
+        @media (min-width:800px) {
+            margin: 0 20px;
+        }
+    }
 }
 
 .download-links:hover {

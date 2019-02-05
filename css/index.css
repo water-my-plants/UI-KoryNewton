@@ -266,6 +266,11 @@ table {
   display: flex;
   flex-flow: column nowrap;
 }
+@media (min-width: 800px) {
+  .details {
+    margin-top: 60px;
+  }
+}
 .details section {
   display: flex;
   flex-flow: column nowrap;
@@ -303,6 +308,17 @@ table {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+}
+@media (min-width: 800px) {
+  .download-links {
+    margin: 40px 0;
+    justify-content: center;
+  }
+}
+@media (min-width: 800px) {
+  .download-links a {
+    margin: 0 20px;
+  }
 }
 .download-links:hover {
   cursor: pointer;
