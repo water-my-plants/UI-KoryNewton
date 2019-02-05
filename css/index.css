@@ -258,6 +258,10 @@ table {
   background-color: white;
   border: 1px solid black;
   font-size: 2rem;
+  height: 50px;
+  width: 150px;
+  border-radius: 10px;
+  margin-top: 20px;
 }
 .cta .cta-text button:hover {
   cursor: pointer;
@@ -292,6 +296,11 @@ table {
   width: 100%;
   max-width: 500px;
   border-radius: 50%;
+}
+@media (min-width: 800px) {
+  .details img {
+    margin: 0 30px;
+  }
 }
 .details h3 {
   font-size: 4rem;
