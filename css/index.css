@@ -139,7 +139,7 @@ table {
 }
 .navbar h1 {
   font-size: 5rem;
-  font-family: 'Nanum Pen Script', cursive;
+  font-family: 'Play', cursive;
   color: #5AAB61;
 }
 .navbar .buttons {
@@ -178,7 +178,7 @@ table {
 }
 .dropdown a {
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
   margin: 5px;
 }
@@ -313,7 +313,7 @@ table {
   }
 }
 .details img {
-  width: 80%;
+  width: 65%;
   max-width: 500px;
   border-radius: 50%;
 }
@@ -333,6 +333,11 @@ table {
   font-weight: strong;
   margin: 30px auto;
   text-align: center;
+}
+@media (min-width: 1000px) {
+  .details h3 {
+    height: 80px;
+  }
 }
 .details p {
   text-align: center;
