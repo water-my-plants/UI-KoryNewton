@@ -136,6 +136,8 @@ table {
   height: 80px;
   padding: 0 15px;
   width: 100%;
+  position: relative;
+  z-index: 2;
 }
 .navbar h1 {
   font-size: 4.3rem;
@@ -145,20 +147,29 @@ table {
 .navbar .buttons {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 .navbar .buttons a {
   display: none;
+  width: 100px;
+  height: 50px;
+  border-radius: 15px;
 }
 @media (min-width: 800px) {
   .navbar .buttons a {
-    display: flex;
+    display: inline-block;
+    text-align: center;
+    padding-top: 17px;
     text-decoration: none;
     color: white;
-    margin: 10px;
+    margin: 3px;
     font-size: 1.5rem;
   }
+}
+.navbar .buttons img {
+  width: 50px;
+  border-radius: 10px;
 }
 @media (min-width: 800px) {
   .navbar .buttons img {
@@ -169,24 +180,46 @@ table {
   cursor: pointer;
 }
 .dropdown {
-  height: 70px;
   background-color: #30694B;
-  position: relative;
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
+}
+@media (min-width: 800px) {
+  .dropdown {
+    display: none;
+  }
 }
 .dropdown a {
+  display: block;
   text-decoration: none;
   font-size: 1.5rem;
   color: white;
-  margin: 5px;
+  margin-right: 5px;
+  padding-top: 11px;
+  text-align: center;
+  border-radius: 10px;
+  height: 40px;
+  width: 80px;
 }
 .dropdown a:hover {
   cursor: pointer;
 }
 .no-show {
   display: none;
+}
+.animation {
+  animation: dropdownAnimation 50ms ease;
+}
+@keyframes dropdownAnimation {
+  0% {
+    top: -60px;
+  }
+  100% {
+    top: 0px;
+  }
 }
 .cta {
   position: relative;
@@ -224,25 +257,20 @@ table {
 }
 .cta .cta-text {
   position: relative;
+  height: 100%;
   width: 60%;
-  top: 0;
-  left: 0;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
-  align-items: center;
-  height: 100%;
+  align-items: flex-start;
 }
 @media (min-width: 800px) {
   .cta .cta-text {
-    top: 0;
-    left: 0;
-    right: 0;
     margin: 0;
   }
 }
 .cta .cta-text h2 {
-  font-size: 10vw;
+  font-size: 9vw;
   margin: 10px 0;
 }
 @media (min-width: 800px) {
@@ -251,7 +279,7 @@ table {
   }
 }
 .cta .cta-text h3 {
-  font-size: 5vw;
+  font-size: 4vw;
   margin: 10px 0;
 }
 @media (min-width: 800px) {
@@ -294,16 +322,18 @@ table {
   margin: 60px 20px 0 20px;
   background-color: #D2E8D3;
   border: 1px solid #E8E8E8;
+  text-align: center;
 }
 @media (min-width: 800px) {
   .details section {
     flex-flow: row nowrap;
-    padding: 20px;
+    padding: 5px;
   }
 }
 @media (min-width: 1000px) {
   .details section {
     flex-flow: column nowrap;
+    width: 30%;
   }
 }
 @media (min-width: 800px) {
@@ -320,11 +350,12 @@ table {
   width: 65%;
   max-width: 500px;
   border-radius: 50%;
+  margin-top: 20px;
 }
 @media (min-width: 800px) {
   .details img {
     margin: 0 30px;
-    width: 55%;
+    width: 40%;
   }
 }
 @media (min-width: 1000px) {
@@ -341,12 +372,13 @@ table {
 @media (min-width: 1000px) {
   .details h3 {
     height: 80px;
+    font-size: 3.8rem;
   }
 }
 .details p {
-  text-align: center;
   font-size: 2.5rem;
   margin-bottom: 20px;
+  line-height: 1.2;
 }
 .download-links {
   display: flex;
