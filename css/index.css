@@ -184,6 +184,11 @@ table {
   flex-flow: column nowrap;
   align-items: flex-end;
 }
+@media (min-width: 800px) {
+  .dropdown {
+    display: none;
+  }
+}
 .dropdown a {
   display: block;
   text-decoration: none;
@@ -194,7 +199,7 @@ table {
   text-align: center;
   border-radius: 10px;
   height: 40px;
-  width: 10%;
+  width: 80px;
 }
 .dropdown a:hover {
   cursor: pointer;
