@@ -1,13 +1,14 @@
 //Javascript
 
-//hamburger button
+
+//add event listener to mobile hamburger button
 let hamburgerBtn = document.querySelector('.navbar .buttons img')
-
 let loginSignUp =  document.querySelectorAll('.no-show')
-
 let dropDown = document.querySelector('.dropdown')
 
-//add event listener to hamburger button
+
+
+//Toggle dropdown animation of mobile dropdown element
 hamburgerBtn.addEventListener('click', event => {
     loginSignUp.forEach(item => item.classList.toggle('no-show'))
     dropDown.classList.toggle('animation')
@@ -29,15 +30,12 @@ learnMoreBtn.addEventListener('mouseout', event => {
 })
 
 
-// all navbar buttons 
-
+// Navbar/Dropdown button class, will accomadate as many buttons with same functionality
 class Button {
     constructor(btnElement) {
         this.btnElement = btnElement;
         this.btnElement.addEventListener('mouseover', () => this.moused(this.btnElement))
         this.btnElement.addEventListener('mouseout', () => this.mousedOut(this.btnElement))
-
-
     }
 
     moused() {
@@ -58,4 +56,3 @@ class Button {
 let navbarBtns = document.querySelectorAll('.container .actionLink');
 navbarBtns.forEach(item => new Button(item))
 
-// this.cards = document.querySelectorAll(`.card[data-tab= '${this.tabData}']`)
