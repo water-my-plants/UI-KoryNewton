@@ -224,25 +224,20 @@ table {
 }
 .cta .cta-text {
   position: relative;
+  height: 100%;
   width: 60%;
-  top: 0;
-  left: 0;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
-  align-items: center;
-  height: 100%;
+  align-items: flex-start;
 }
 @media (min-width: 800px) {
   .cta .cta-text {
-    top: 0;
-    left: 0;
-    right: 0;
     margin: 0;
   }
 }
 .cta .cta-text h2 {
-  font-size: 10vw;
+  font-size: 9vw;
   margin: 10px 0;
 }
 @media (min-width: 800px) {
@@ -251,7 +246,7 @@ table {
   }
 }
 .cta .cta-text h3 {
-  font-size: 5vw;
+  font-size: 4vw;
   margin: 10px 0;
 }
 @media (min-width: 800px) {
