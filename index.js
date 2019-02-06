@@ -5,10 +5,14 @@ let hamburgerBtn = document.querySelector('.navbar .buttons img')
 
 let loginSignUp =  document.querySelectorAll('.no-show')
 
+let dropDown = document.querySelector('.dropdown')
+
 //add event listener to hamburger button
 hamburgerBtn.addEventListener('click', event => {
     loginSignUp.forEach(item => item.classList.toggle('no-show'))
+    dropDown.classList.toggle('animation')
 })
+
 
 
 //Event listener for "Learn More" button:

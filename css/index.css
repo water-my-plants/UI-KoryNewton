@@ -136,6 +136,8 @@ table {
   height: 80px;
   padding: 0 15px;
   width: 100%;
+  position: relative;
+  z-index: 2;
 }
 .navbar h1 {
   font-size: 4.3rem;
@@ -179,10 +181,11 @@ table {
 }
 .dropdown {
   background-color: #30694B;
-  position: relative;
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-end;
+  position: relative;
+  z-index: 1;
 }
 @media (min-width: 800px) {
   .dropdown {
@@ -206,6 +209,17 @@ table {
 }
 .no-show {
   display: none;
+}
+.animation {
+  animation: dropdownAnimation 50ms ease;
+}
+@keyframes dropdownAnimation {
+  0% {
+    top: -60px;
+  }
+  100% {
+    top: 0px;
+  }
 }
 .cta {
   position: relative;
