@@ -24,3 +24,34 @@ learnMoreBtn.addEventListener('mouseout', event => {
     event.target.style.color = 'black'
 })
 
+
+// all navbar buttons 
+
+class Button {
+    constructor(btnElement) {
+        this.btnElement = btnElement;
+        this.btnElement.addEventListener('mouseover', () => this.moused(this.btnElement))
+        this.btnElement.addEventListener('mouseout', () => this.mousedOut(this.btnElement))
+
+
+    }
+
+    moused() {
+        let allBtns = document.querySelectorAll('.container .actionLink')
+         allBtns.forEach(item => item.style.backgroundColor = '#30694B')
+         this.btnElement.style.backgroundColor = '#45785D';
+         this.btnElement.style.color = 'white'
+    }
+
+    mousedOut() {
+        let allBtns = document.querySelectorAll('.container .actionLink')
+        allBtns.forEach(item => item.style.backgroundColor = '#30694B' )
+
+    }
+}
+
+
+let navbarBtns = document.querySelectorAll('.container .actionLink');
+navbarBtns.forEach(item => new Button(item))
+
+// this.cards = document.querySelectorAll(`.card[data-tab= '${this.tabData}']`)
