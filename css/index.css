@@ -298,12 +298,13 @@ table {
 @media (min-width: 800px) {
   .details section {
     flex-flow: row nowrap;
-    padding: 20px;
+    padding: 5px;
   }
 }
 @media (min-width: 1000px) {
   .details section {
     flex-flow: column nowrap;
+    width: 30%;
   }
 }
 @media (min-width: 800px) {
@@ -324,7 +325,7 @@ table {
 @media (min-width: 800px) {
   .details img {
     margin: 0 30px;
-    width: 55%;
+    width: 40%;
   }
 }
 @media (min-width: 1000px) {
@@ -341,6 +342,7 @@ table {
 @media (min-width: 1000px) {
   .details h3 {
     height: 80px;
+    font-size: 3.8rem;
   }
 }
 .details p {
