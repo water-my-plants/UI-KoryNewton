@@ -414,6 +414,55 @@ footer {
 footer h6 {
   padding-top: 30px;
 }
+.home {
+  text-decoration: none;
+}
+.home:hover {
+  cursor: pointer;
+}
+.title {
+  font-size: 4rem;
+  text-align: center;
+  margin: 20px;
+}
+.content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+.content .card {
+  width: 250px;
+  margin: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.content .card .ghProfPic {
+  height: auto;
+  width: auto;
+  max-width: 250px;
+  max-height: 250px;
+}
+.content .card h2 {
+  font-size: 2rem;
+  margin: 2px 0;
+}
+.content .card h4 {
+  font-size: 1.5rem;
+}
+.content .card .githubLinkImage {
+  height: auto;
+  width: auto;
+  max-width: 20px;
+  max-height: 20px;
+  margin-top: 10px;
+}
+.content .card .githubLinkImage:hover {
+  cursor: pointer;
+}
 * {
   box-sizing: border-box;
 }
