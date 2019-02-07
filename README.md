@@ -1,4 +1,4 @@
-#Water My Plants
+# Water My Plants
 
 Water My Plants is a web application for keeping track of your plants water needs.
 
