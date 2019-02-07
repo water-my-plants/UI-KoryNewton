@@ -434,6 +434,7 @@ footer h6 {
 .content .card {
   width: 250px;
   margin: 10px;
+  padding: 20px 0 10px 0;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-end;
@@ -461,6 +462,9 @@ footer h6 {
 }
 .content .card .githubLinkImage:hover {
   cursor: pointer;
+}
+.content .card:hover {
+  background-color: #D2E8D3;
 }
 * {
   box-sizing: border-box;
