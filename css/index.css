@@ -443,8 +443,8 @@ footer h6 {
 .content .card .ghProfPic {
   height: auto;
   width: auto;
-  max-width: 250px;
-  max-height: 250px;
+  max-width: 175px;
+  max-height: 175px;
 }
 .content .card h2 {
   font-size: 2rem;
