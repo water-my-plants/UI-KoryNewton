@@ -133,15 +133,15 @@ table {
   align-items: center;
   background-color: #30694B;
   color: white;
+  height: 54px;
   padding: 0 15px;
   width: 100%;
   position: relative;
   z-index: 2;
 }
-.navbar h1 {
-  font-size: 2rem;
-  font-family: 'Bree Serif', serif;
-  color: white;
+.navbar .logo img {
+  max-height: 54px;
+  width: auto;
 }
 .navbar .buttons {
   display: flex;
