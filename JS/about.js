@@ -44,6 +44,6 @@ navbarBtns.forEach(item => new Button(item))
 
 class Cards {
     constructor() {
-        
+
     }
 }

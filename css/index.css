@@ -133,16 +133,15 @@ table {
   align-items: center;
   background-color: #30694B;
   color: white;
-  height: 80px;
+  height: 54px;
   padding: 0 15px;
   width: 100%;
   position: relative;
   z-index: 2;
 }
-.navbar h1 {
-  font-size: 4rem;
-  font-family: 'Bree Serif', serif;
-  color: white;
+.navbar .logo img {
+  max-height: 54px;
+  width: auto;
 }
 .navbar .buttons {
   display: flex;
@@ -229,7 +228,7 @@ table {
 }
 @media (min-width: 800px) {
   .cta {
-    max-width: 800px;
+    max-width: 1000px;
     height: 550px;
   }
 }
@@ -241,7 +240,7 @@ table {
 .cta img {
   width: 100%;
   height: 100%;
-  max-width: 800px;
+  max-width: 1000px;
   font-size: 2.75rem;
   position: absolute;
   top: 0;
